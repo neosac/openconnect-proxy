@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  ocproxy:
+    privileged: true
+    build: ./build
+    env_file:
+      - .env
+    ports:
+      - 8888:8888
+      - 8889:8889
+    cap_add:
+      - NET_ADMIN
