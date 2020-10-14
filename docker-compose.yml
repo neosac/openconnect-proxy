@@ -5,6 +5,8 @@ services:
     build: ./build
     env_file:
       - .env
+    environment:
+      OPENCONNECT_MFA_CODE: ${OPENCONNECT_MFA_CODE}
     ports:
       - 8888:8888
       - 8889:8889
