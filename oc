@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /mnt/c/Users/kenny/development/github.com/httpdss/openconnect-proxy
+export OPENCONNECT_MFA_CODE=$1
+docker-compose up%
