@@ -1,0 +1,3 @@
+#!/bin/bash
+docker run --rm --privileged multiarch/qemu-user-static:register --reset
+docker build --platform arm -f $DOCKERFILE_PATH -t $IMAGE_NAME .
